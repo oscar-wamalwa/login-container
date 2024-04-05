@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Fortipad documents</title>
+    <link rel="stylesheet" href="style.css">
+ </head>   
+ <body style="background-color: rgb(255, 255, 255);">
+    <div class="login-container">
+      <h1 class="login-title"> User login</h1>
+      <form action="login_form.php" method="POST">
+        <!--
+            below is the Login form
+        -->
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" placeholder="enter username" required>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" maxlength="6" placeholder="enter password" required>
+        <input type="submit" value="login">
+      </form>
+    </div>
+  </body>
+  <style>
+  body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background-color: greenyellow;
+    padding: 30px;
+    border-radius: 60px;
+  }
+  
+  .login-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    display: block;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid linen;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  </style>
+  </html>
